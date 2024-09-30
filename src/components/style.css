@@ -1,0 +1,98 @@
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    
+}
+#root {
+    height: 100%; /* Make sure the root div takes full height */
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100%; /* Full height of the viewport */
+    width: 100%;
+}
+
+:root {
+    --text-color: #ffffff;
+    --border-color: #DEECFF;
+    --font-family: "Roboto", sans-serif;
+    --font-size: 70px;
+    --font-weight: 600;
+}
+
+.NBAtittle {
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    margin:0;/* Remove default margin */
+    align-content:center; 
+}
+
+.red-rectangle {
+    background-color:  #b32222; /* Set background color to red */
+    width: 90vw;           /* Full width of the page */
+    height: 150px;         /* Adjust the height as needed */
+    margin:0;           /* Optional: Space between the h1 and the rectangle */
+    align-content: center;
+}
+
+.logoDer {
+    position: absolute; /* Enables absolute positioning */
+    top: 45px;         /* Distance from the top of the page */
+    right: 2px;       /* Distance from the right side of the page */
+    width: 150px;      /* Set a specific width for the image */
+    height: auto;      /* Maintain aspect ratio */
+    z-index: 1000;     /* Ensures the image is on top of other elements */
+}
+
+.logoIzq {
+    position: absolute; /* Enables absolute positioning */
+    top: 45px;         /* Distance from the top of the page */
+    left:70px;       /* Distance from the right side of the page */
+    width: 150px;      /* Set a specific width for the image */
+    height: auto;      /* Maintain aspect ratio */
+    z-index: 1000;     /* Ensures the image is on top of other elements */
+}
+
+.input-box {
+    border: 2px solid blue; /* Blue border */
+    width: 400px;           /* Adjust the width as needed for size */
+    height: 50px;           /* Adjust the height for size */
+    font-size: 18px;        /* Larger text size */
+    padding: 10px;          /* Padding inside the input */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: block;         /* Allow margin auto to work */
+    margin: 0 auto;        /* Center the input box */
+    margin-top: 20vh;      /* Space from the top for vertical centering */
+    margin-bottom: 20px;
+}
+
+.red-border-button {
+    border: 2px solid red; /* Sets the border color to red and specifies the thickness */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    padding: 10px 15px; /* Optional: Adds padding inside the button */
+    background-color: transparent; /* Optional: Keeps the background transparent */
+    color: red; /* Optional: Sets text color to red */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Optional: Adds a smooth transition effect */
+    margin-top: 20px;      /* Space from the top for vertical centering */
+    margin-bottom: 20px;
+}
+
+.multi-column-list {
+    column-count: 3;          /* Number of columns */
+    column-gap: 20px;         /* Gap between columns */
+    list-style-type: none;    /* Remove default list styles */
+    padding: 0;               /* Remove default padding */
+    
+}
+
+.multi-column-list li {
+    break-inside: avoid;      /* Avoid breaking items between columns */
+    margin-bottom: 10px;      /* Spacing between list items */
+}
